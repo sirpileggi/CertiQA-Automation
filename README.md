@@ -128,4 +128,4 @@ Os cenários foram organizados por funcionalidade, facilitando:
 
 ## 👨‍💻 Autor
 
-Projeto desenvolvido para fins de estudo e prática em automação de testes utilizando Cypress na plataforma **CertiQA Academy - Qazando**. :contentReference[oaicite:1]{index=1}
+Projeto desenvolvido para fins de estudo e prática em automação de testes utilizando Cypress na plataforma **CertiQA Academy - Qazando**.
