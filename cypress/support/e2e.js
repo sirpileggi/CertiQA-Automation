@@ -1,0 +1,1 @@
+// Global Cypress commands and hooks can be added here.
