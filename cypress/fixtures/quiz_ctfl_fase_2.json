@@ -1,0 +1,32 @@
+{
+  "respostas_100_incorretas": [
+    { "pergunta": "No Modelo V, o que está corretamente associado ao teste de sistema?", "resposta": "Codificação" },
+    { "pergunta": "No modelo ágil, como os testes são integrados ao desenvolvimento?", "resposta": "Testes são opcionais" },
+    { "pergunta": "Qual é o foco principal do teste de componente?", "resposta": "Testa integração entre sistemas" },
+    { "pergunta": "O que caracteriza o teste de aceitação?", "resposta": "Testa apenas performance" },
+    { "pergunta": "Quando é realizado o teste de manutenção?", "resposta": "Durante o desenvolvimento inicial" },
+    { "pergunta": "O que é análise de impacto?", "resposta": "Mede performance do sistema" },
+    { "pergunta": "Qual modelo de desenvolvimento tem fases sequenciais?", "resposta": "Modelo espiral" },
+    { "pergunta": "O que é teste de confirmação?", "resposta": "Testa usabilidade" }
+  ],
+  "respostas_50_porcento_corretas": [
+    { "pergunta": "No Modelo V, o que está corretamente associado ao teste de sistema?", "resposta": "Especificação de requisito" },
+    { "pergunta": "No modelo ágil, como os testes são integrados ao desenvolvimento?", "resposta": "Testes são contínuos e integrados" },
+    { "pergunta": "Qual é o foco principal do teste de componente?", "resposta": "Testa componentes individuais isoladamente" },
+    { "pergunta": "O que caracteriza o teste de aceitação?", "resposta": "Valida critérios de aceitação do usuário" },
+    { "pergunta": "Quando é realizado o teste de manutenção?", "resposta": "Durante o desenvolvimento inicial" },
+    { "pergunta": "O que é análise de impacto?", "resposta": "Mede performance do sistema" },
+    { "pergunta": "Qual modelo de desenvolvimento tem fases sequenciais?", "resposta": "Modelo espiral" },
+    { "pergunta": "O que é teste de confirmação?", "resposta": "Testa usabilidade" }
+  ],
+  "respostas_100_corretas": [
+    { "pergunta": "No Modelo V, o que está corretamente associado ao teste de sistema?", "resposta": "Especificação de requisito" },
+    { "pergunta": "No modelo ágil, como os testes são integrados ao desenvolvimento?", "resposta": "Testes são contínuos e integrados" },
+    { "pergunta": "Qual é o foco principal do teste de componente?", "resposta": "Testa componentes individuais isoladamente" },
+    { "pergunta": "O que caracteriza o teste de aceitação?", "resposta": "Valida critérios de aceitação do usuário" },
+    { "pergunta": "Quando é realizado o teste de manutenção?", "resposta": "Após modificações em sistemas existentes" },
+    { "pergunta": "O que é análise de impacto?", "resposta": "Identifica partes afetadas por mudanças" },
+    { "pergunta": "Qual modelo de desenvolvimento tem fases sequenciais?", "resposta": "Modelo em cascata (waterfall)" },
+    { "pergunta": "O que é teste de confirmação?", "resposta": "Verifica se defeito foi corrigido" }
+  ]
+}
