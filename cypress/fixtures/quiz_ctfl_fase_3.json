@@ -1,0 +1,104 @@
+{
+    "respostas_100_incorretas": [
+        {
+            "pergunta": "Qual é a principal diferença entre teste estático e teste dinâmico?",
+            "resposta": "Teste estático é mais caro que teste dinâmico"
+        },
+        {
+            "pergunta": "O que pode ser revisado em teste estático?",
+            "resposta": "Apenas código fonte"
+        },
+        {
+            "pergunta": "Qual é o papel do moderador em uma inspeção?",
+            "resposta": "Escreve o documento sendo revisado"
+        },
+        {
+            "pergunta": "O que é uma entrada (entry criteria) para revisão?",
+            "resposta": "Define quando revisão está completa"
+        },
+        {
+            "pergunta": "Qual ferramenta automatiza análise estática?",
+            "resposta": "Ferramentas de performance"
+        },
+        {
+            "pergunta": "O que caracteriza um walkthrough?",
+            "resposta": "Sempre formal com papéis definidos"
+        },
+        {
+            "pergunta": "Quando defeitos são mais baratos de corrigir?",
+            "resposta": "Apenas após testes dinâmicos"
+        },
+        {
+            "pergunta": "O que é saída (exit criteria) de revisão?",
+            "resposta": "Define quando produto está pronto para revisão"
+        }
+    ],
+    "respostas_50_porcento_corretas": [
+        {
+            "pergunta": "Qual é a principal diferença entre teste estático e teste dinâmico?",
+            "resposta": "Teste estático verifica o código sem executá-lo, teste dinâmico executa o código"
+        },
+        {
+            "pergunta": "O que pode ser revisado em teste estático?",
+            "resposta": "Requisitos, código, documentação, casos de teste"
+        },
+        {
+            "pergunta": "Qual é o papel do moderador em uma inspeção?",
+            "resposta": "Facilita a reunião e garante que processo seja seguido"
+        },
+        {
+            "pergunta": "O que é uma entrada (entry criteria) para revisão?",
+            "resposta": "Define quando produto está pronto para revisão"
+        },
+        {
+            "pergunta": "Qual ferramenta automatiza análise estática?",
+            "resposta": "Ferramentas de performance"
+        },
+        {
+            "pergunta": "O que caracteriza um walkthrough?",
+            "resposta": "Conduzido pelo autor, pode ser informal ou formal"
+        },
+        {
+            "pergunta": "Quando defeitos são mais baratos de corrigir?",
+            "resposta": "Durante a produção"
+        },
+        {
+            "pergunta": "O que é saída (exit criteria) de revisão?",
+            "resposta": "Define quando produto está pronto para revisão"
+        }
+    ],
+    "respostas_100_corretas": [
+        {
+            "pergunta": "Qual é a principal diferença entre teste estático e teste dinâmico?",
+            "resposta": "Teste estático verifica o código sem executá-lo, teste dinâmico executa o código"
+        },
+        {
+            "pergunta": "O que pode ser revisado em teste estático?",
+            "resposta": "Requisitos, código, documentação, casos de teste"
+        },
+        {
+            "pergunta": "Qual é o papel do moderador em uma inspeção?",
+            "resposta": "Facilita a reunião e garante que processo seja seguido"
+        },
+        {
+            "pergunta": "O que é uma entrada (entry criteria) para revisão?",
+            "resposta": "Define quando produto está pronto para revisão"
+        },
+        {
+            "pergunta": "Qual ferramenta automatiza análise estática?",
+            "resposta": "Analisadores estáticos"
+        },
+        {
+            "pergunta": "O que caracteriza um walkthrough?",
+            "resposta": "Conduzido pelo autor, pode ser informal ou formal"
+        },
+        {
+            "pergunta": "Quando defeitos são mais baratos de corrigir?",
+            "resposta": "Cedo no ciclo de desenvolvimento"
+        },
+        {
+            "pergunta": "O que é saída (exit criteria) de revisão?",
+            "resposta": "Define quando revisão está completa"
+        }
+    ]
+}

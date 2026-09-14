@@ -27,5 +27,15 @@ const abrirFaseDoQuiz = () => {
   cy.contains('button', /Iniciar Quiz|Refazer Quiz/i).click()
 }
 
+const abrirFaseDoQuiz3 = () => {
+  cy.visit('/certificacoes')
+  cy.contains('a', /^Iniciar Estudo$/i).click()
+  cy.location('pathname').should('eq', '/certificacoes/ctfl')
+  cy.contains('Seu Progresso').should('be.visible')
+  cy.get('a[href="/certificacoes/ctfl/fase/static-testing"]').first().click()
+  cy.location('pathname').should('eq', '/certificacoes/ctfl/fase/static-testing')
+  cy.contains('button', /Iniciar Quiz|Refazer Quiz/i).click()
+}
 Cypress.Commands.add('responderQuestionario', responderQuestionario)
 Cypress.Commands.add('abrirFaseDoQuiz', abrirFaseDoQuiz)
+Cypress.Commands.add('abrirFaseDoQuiz3', abrirFaseDoQuiz3)
