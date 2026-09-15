@@ -17,6 +17,16 @@ const responderQuestionario = (respostas) => {
   })
 }
 
+const abrirFaseDoQuiz1 = () => {
+  cy.visit('/certificacoes')
+  cy.contains('a', /^Iniciar Estudo$/i).click()
+  cy.location('pathname').should('eq', '/certificacoes/ctfl')
+  cy.contains('Seu Progresso').should('be.visible')
+  cy.get('a[href="/certificacoes/ctfl/fase/fundamentals"]').first().click()
+  cy.location('pathname').should('eq', '/certificacoes/ctfl/fase/fundamentals')
+  cy.contains('button', /Iniciar Quiz|Refazer Quiz/i).click()
+}
+
 const abrirFaseDoQuiz = () => {
   cy.visit('/certificacoes')
   cy.contains('a', /^Iniciar Estudo$/i).click()
@@ -37,5 +47,6 @@ const abrirFaseDoQuiz3 = () => {
   cy.contains('button', /Iniciar Quiz|Refazer Quiz/i).click()
 }
 Cypress.Commands.add('responderQuestionario', responderQuestionario)
+Cypress.Commands.add('abrirFaseDoQuiz1', abrirFaseDoQuiz1)
 Cypress.Commands.add('abrirFaseDoQuiz', abrirFaseDoQuiz)
 Cypress.Commands.add('abrirFaseDoQuiz3', abrirFaseDoQuiz3)

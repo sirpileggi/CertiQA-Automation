@@ -1,0 +1,63 @@
+{
+   "respostas_100_corretas": [
+    { "pergunta": "Qual dos seguintes NÃO é um princípio de teste?", "resposta": "Testes sempre garantem software sem defeitos" },
+    { "pergunta": "O que é o \"Paradoxo do Pesticida\" em testes?", "resposta": "Quando os mesmos testes repetidos param de encontrar novos defeitos" },
+    { "pergunta": "Qual é o principal objetivo do teste de software?", "resposta": "Verificar se o software atende aos requisitos e identificar defeitos" },
+    { "pergunta": "Qual princípio de teste afirma que executar os mesmos testes repetidamente se torna menos eficaz?", "resposta": "Paradoxo do pesticida" },
+    { "pergunta": "O que significa \"agrupamento de defeitos\" em teste de software?", "resposta": "Pequeno número de módulos contém a maioria dos defeitos" },
+    { "pergunta": "Por que \"teste antecipado economiza tempo e dinheiro\"?", "resposta": "Encontrar defeitos quando são mais baratos de corrigir" },
+    { "pergunta": "O que é a \"ausência de erros é uma falácia\"?", "resposta": "Sistema pode estar livre de defeitos mas ser inutilizável" },
+    { "pergunta": "Qual é a diferença entre erro, defeito e falha?", "resposta": "Erro → Defeito → Falha" },
+    { "pergunta": "O que caracteriza um bom caso de teste?", "resposta": "Deve ter alta probabilidade de encontrar um erro" },
+    { "pergunta": "Qual atividade NÃO faz parte do processo fundamental de teste?", "resposta": "Codificação" }
+  ],
+
+  "respostas_100_incorretas": [
+    { "pergunta": "Qual dos seguintes NÃO é um princípio de teste?", "resposta": "Teste exaustivo é impossível" },
+    { "pergunta": "O que é o \"Paradoxo do Pesticida\" em testes?", "resposta": "Quando testes são executados manualmente ao invés de automaticamente" },
+    { "pergunta": "Qual é o principal objetivo do teste de software?", "resposta": "Provar que o software não tem defeitos" },
+    { "pergunta": "Qual princípio de teste afirma que executar os mesmos testes repetidamente se torna menos eficaz?", "resposta": "Teste antecipado economiza tempo e dinheiro" },
+    { "pergunta": "O que significa \"agrupamento de defeitos\" em teste de software?", "resposta": "Todos os módulos têm a mesma quantidade de defeitos" },
+    { "pergunta": "Por que \"teste antecipado economiza tempo e dinheiro\"?", "resposta": "Usar menos testadores" },
+    { "pergunta": "O que é a \"ausência de erros é uma falácia\"?", "resposta": "Sistema sem defeitos sempre atende aos usuários" },
+    { "pergunta": "Qual é a diferença entre erro, defeito e falha?", "resposta": "São sinônimos com o mesmo significado" },
+    { "pergunta": "O que caracteriza um bom caso de teste?", "resposta": "Deve sempre passar com sucesso" },
+    { "pergunta": "Qual atividade NÃO faz parte do processo fundamental de teste?", "resposta": "Planejamento de teste" }
+  ],
+  "respostas_30_porcento_corretas": [
+    { "pergunta": "Qual dos seguintes NÃO é um princípio de teste?", "resposta": "Testes sempre garantem software sem defeitos" },
+    { "pergunta": "O que é o \"Paradoxo do Pesticida\" em testes?", "resposta": "Quando os mesmos testes repetidos param de encontrar novos defeitos" },
+    { "pergunta": "Qual é o principal objetivo do teste de software?", "resposta": "Verificar se o software atende aos requisitos e identificar defeitos" },
+    { "pergunta": "Qual princípio de teste afirma que executar os mesmos testes repetidamente se torna menos eficaz?", "resposta": "Teste antecipado economiza tempo e dinheiro" },
+    { "pergunta": "O que significa \"agrupamento de defeitos\" em teste de software?", "resposta": "Todos os módulos têm a mesma quantidade de defeitos" },
+    { "pergunta": "Por que \"teste antecipado economiza tempo e dinheiro\"?", "resposta": "Usar menos testadores" },
+    { "pergunta": "O que é a \"ausência de erros é uma falácia\"?", "resposta": "Sistema sem defeitos sempre atende aos usuários" },
+    { "pergunta": "Qual é a diferença entre erro, defeito e falha?", "resposta": "São sinônimos com o mesmo significado" },
+    { "pergunta": "O que caracteriza um bom caso de teste?", "resposta": "Deve sempre passar com sucesso" },
+    { "pergunta": "Qual atividade NÃO faz parte do processo fundamental de teste?", "resposta": "Planejamento de teste" }
+  ],
+  "respostas_40_porcento_corretas": [
+    { "pergunta": "Qual dos seguintes NÃO é um princípio de teste?", "resposta": "Testes sempre garantem software sem defeitos" },
+    { "pergunta": "O que é o \"Paradoxo do Pesticida\" em testes?", "resposta": "Quando os mesmos testes repetidos param de encontrar novos defeitos" },
+    { "pergunta": "Qual é o principal objetivo do teste de software?", "resposta": "Verificar se o software atende aos requisitos e identificar defeitos" },
+    { "pergunta": "Qual princípio de teste afirma que executar os mesmos testes repetidamente se torna menos eficaz?", "resposta": "Teste antecipado economiza tempo e dinheiro" },
+    { "pergunta": "O que significa \"agrupamento de defeitos\" em teste de software?", "resposta": "Todos os módulos têm a mesma quantidade de defeitos" },
+    { "pergunta": "Por que \"teste antecipado economiza tempo e dinheiro\"?", "resposta": "Usar menos testadores" },
+    { "pergunta": "O que é a \"ausência de erros é uma falácia\"?", "resposta": "Sistema sem defeitos sempre atende aos usuários" },
+    { "pergunta": "Qual é a diferença entre erro, defeito e falha?", "resposta": "São sinônimos com o mesmo significado" },
+    { "pergunta": "O que caracteriza um bom caso de teste?", "resposta": "Deve sempre passar com sucesso" },
+    { "pergunta": "Qual atividade NÃO faz parte do processo fundamental de teste?", "resposta": "Planejamento de teste" }
+  ],
+  "respostas_50_porcento_corretas": [
+    { "pergunta": "Qual dos seguintes NÃO é um princípio de teste?", "resposta": "Testes sempre garantem software sem defeitos" },
+    { "pergunta": "O que é o \"Paradoxo do Pesticida\" em testes?", "resposta": "Quando os mesmos testes repetidos param de encontrar novos defeitos" },
+    { "pergunta": "Qual é o principal objetivo do teste de software?", "resposta": "Verificar se o software atende aos requisitos e identificar defeitos" },
+    { "pergunta": "Qual princípio de teste afirma que executar os mesmos testes repetidamente se torna menos eficaz?", "resposta": "Teste antecipado economiza tempo e dinheiro" },
+    { "pergunta": "O que significa \"agrupamento de defeitos\" em teste de software?", "resposta": "Todos os módulos têm a mesma quantidade de defeitos" },
+    { "pergunta": "Por que \"teste antecipado economiza tempo e dinheiro\"?", "resposta": "Usar menos testadores" },
+    { "pergunta": "O que é a \"ausência de erros é uma falácia\"?", "resposta": "Sistema sem defeitos sempre atende aos usuários" },
+    { "pergunta": "Qual é a diferença entre erro, defeito e falha?", "resposta": "São sinônimos com o mesmo significado" },
+    { "pergunta": "O que caracteriza um bom caso de teste?", "resposta": "Deve sempre passar com sucesso" },
+    { "pergunta": "Qual atividade NÃO faz parte do processo fundamental de teste?", "resposta": "Planejamento de teste" }
+  ]
+}
