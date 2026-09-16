@@ -27,7 +27,7 @@ const abrirFaseDoQuiz1 = () => {
   cy.contains('button', /Iniciar Quiz|Refazer Quiz/i).click()
 }
 
-const abrirFaseDoQuiz = () => {
+const abrirFaseDoQuiz2 = () => {
   cy.visit('/certificacoes')
   cy.contains('a', /^Iniciar Estudo$/i).click()
   cy.location('pathname').should('eq', '/certificacoes/ctfl')
@@ -48,5 +48,5 @@ const abrirFaseDoQuiz3 = () => {
 }
 Cypress.Commands.add('responderQuestionario', responderQuestionario)
 Cypress.Commands.add('abrirFaseDoQuiz1', abrirFaseDoQuiz1)
-Cypress.Commands.add('abrirFaseDoQuiz', abrirFaseDoQuiz)
+Cypress.Commands.add('abrirFaseDoQuiz2', abrirFaseDoQuiz2)
 Cypress.Commands.add('abrirFaseDoQuiz3', abrirFaseDoQuiz3)

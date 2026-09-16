@@ -19,7 +19,7 @@
     { "pergunta": "Qual modelo de desenvolvimento tem fases sequenciais?", "resposta": "Modelo espiral" },
     { "pergunta": "O que é teste de confirmação?", "resposta": "Testa usabilidade" }
   ],
-  "respostas_100_corretas": [
+  "respostas_100_porcento_corretas": [
     { "pergunta": "No Modelo V, o que está corretamente associado ao teste de sistema?", "resposta": "Especificação de requisito" },
     { "pergunta": "No modelo ágil, como os testes são integrados ao desenvolvimento?", "resposta": "Testes são contínuos e integrados" },
     { "pergunta": "Qual é o foco principal do teste de componente?", "resposta": "Testa componentes individuais isoladamente" },
