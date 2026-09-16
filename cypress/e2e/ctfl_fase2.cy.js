@@ -11,9 +11,9 @@ describe('Certificação CTFL fase 2', () => {
     })
   })
 
-  it('respostas 100% incorretas', () => {
+  it('Respostas 100% incorretas', () => {
     cy.fixture('quiz_ctfl_fase_2').then((quiz) => {
-      cy.abrirFaseDoQuiz()
+      cy.abrirFaseDoQuiz2()
       cy.responderQuestionario(quiz.respostas_100_incorretas)
 
       cy.get('.text-center > p.text-gray-600')
@@ -25,9 +25,9 @@ describe('Certificação CTFL fase 2', () => {
     })
   })
 
-  it('respostas 50% corretas', () => {
+  it('Respostas 50% corretas', () => {
     cy.fixture('quiz_ctfl_fase_2').then((quiz) => {
-      cy.abrirFaseDoQuiz()
+      cy.abrirFaseDoQuiz2()
       cy.responderQuestionario(quiz.respostas_50_porcento_corretas)
 
       cy.get('.text-center > p.text-gray-600')
@@ -37,10 +37,10 @@ describe('Certificação CTFL fase 2', () => {
     })
   })
 
-  it('respostas 100% corretas', () => {
+  it('Respostas 100% corretas', () => {
     cy.fixture('quiz_ctfl_fase_2').then((quiz) => {
-      cy.abrirFaseDoQuiz()
-      cy.responderQuestionario(quiz.respostas_100_corretas)
+      cy.abrirFaseDoQuiz2()
+      cy.responderQuestionario(quiz.respostas_100_porcento_corretas)
 
       cy.get('.text-center > p.text-gray-600')
         .should('be.visible')
