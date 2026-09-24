@@ -1,0 +1,128 @@
+{
+    "respostas_100_incorretas": [
+        {
+            "pergunta": "O que deve ser incluído em um relatório de defeito?",
+            "resposta": "Apenas o nome do testador"
+        },
+        {
+            "pergunta": "O que são dados de teste?",
+            "resposta": "Apenas dados sintéticos"
+        },
+        {
+            "pergunta": "O que deve ser verificado no ambiente de teste?",
+            "resposta": "Apenas software instalado"
+        },
+        {
+            "pergunta": "O que são procedimentos de teste?",
+            "resposta": "Apenas resultados finais"
+        },
+        {
+            "pergunta": "Como deve ser feito o logging de resultados?",
+            "resposta": "Registrar apenas tempo de execução"
+        },
+        {
+            "pergunta": "O que incluir na documentação de evidências?",
+            "resposta": "Apenas texto descritivo"
+        },
+        {
+            "pergunta": "Como classificar a severidade de um defeito?",
+            "resposta": "Número de usuários afetados"
+        },
+        {
+            "pergunta": "O que são critérios de conclusão?",
+            "resposta": "Quando todos defeitos são corrigidos"
+        },
+        {
+            "pergunta": "Qual informação é essencial em relatório de defeito?",
+            "resposta": "Tempo gasto testando"
+        },
+        {
+            "pergunta": "Como preparar dados de teste seguros?",
+            "resposta": "Usar sempre dados de produção"
+        }
+    ],
+    "respostas_50_porcento_corretas": [
+        {
+            "pergunta": "O que deve ser incluído em um relatório de defeito?",
+            "resposta": "Descrição clara, passos para reproduzir, resultado esperado vs obtido"
+        },
+        {
+            "pergunta": "O que são dados de teste?",
+            "resposta": "Dados válidos, inválidos, de limite e representativos"
+        },
+        {
+            "pergunta": "O que deve ser verificado no ambiente de teste?",
+            "resposta": "Hardware, software, conectividade e ferramentas"
+        },
+        {
+            "pergunta": "O que são procedimentos de teste?",
+            "resposta": "Sequência detalhada de ações e resultados esperados"
+        },
+        {
+            "pergunta": "Como deve ser feito o logging de resultados?",
+            "resposta": "Registrar apenas tempo de execução"
+        },
+        {
+            "pergunta": "O que incluir na documentação de evidências?",
+            "resposta": "Apenas texto descritivo"
+        },
+        {
+            "pergunta": "Como classificar a severidade de um defeito?",
+            "resposta": "Impacto técnico no sistema"
+        },
+        {
+            "pergunta": "O que são critérios de conclusão?",
+            "resposta": "Quando todos defeitos são corrigidos"
+        },
+        {
+            "pergunta": "Qual informação é essencial em relatório de defeito?",
+            "resposta": "Tempo gasto testando"
+        },
+        {
+            "pergunta": "Como preparar dados de teste seguros?",
+            "resposta": "Usar sempre dados de produção"
+        }
+    ],
+    "respostas_100_porcento_corretas": [
+        {
+            "pergunta": "O que deve ser incluído em um relatório de defeito?",
+            "resposta": "Descrição clara, passos para reproduzir, resultado esperado vs obtido"
+        },
+        {
+            "pergunta": "O que são dados de teste?",
+            "resposta": "Dados válidos, inválidos, de limite e representativos"
+        },
+        {
+            "pergunta": "O que deve ser verificado no ambiente de teste?",
+            "resposta": "Hardware, software, conectividade e ferramentas"
+        },
+        {
+            "pergunta": "O que são procedimentos de teste?",
+            "resposta": "Sequência detalhada de ações e resultados esperados"
+        },
+        {
+            "pergunta": "Como deve ser feito o logging de resultados?",
+            "resposta": "Registrar execução, comparar real vs esperado, documentar evidências"
+        },
+        {
+            "pergunta": "O que incluir na documentação de evidências?",
+            "resposta": "Screenshots, logs, dados e estado do sistema"
+        },
+        {
+            "pergunta": "Como classificar a severidade de um defeito?",
+            "resposta": "Impacto técnico no sistema"
+        },
+        {
+            "pergunta": "O que são critérios de conclusão?",
+            "resposta": "Quando atividades de teste podem ser consideradas completas"
+        },
+        {
+            "pergunta": "Qual informação é essencial em relatório de defeito?",
+            "resposta": "Passos para reproduzir"
+        },
+        {
+            "pergunta": "Como preparar dados de teste seguros?",
+            "resposta": "Usar dados anonimizados, mascarados ou sintéticos"
+        }
+    ]
+}
