@@ -1,13 +1,19 @@
 /// <reference types="cypress" />
 
 describe('Meu Painel', () => {
+
+    const nomeAtual = 'Teste G4 01'
+    const emailAtual = 'testeg4_01@gmail.com'
+    const senhaAtual = 'testeg401'
+
     beforeEach(() => {
-        cy.realizarLogin('testeg4_01@gmail.com', 'testeg401')
+
+        cy.realizarLogin(emailAtual, senhaAtual)
+        cy.visit('/painel')
 
     })
 
     it('acessar pagina de perfil', () => {
-        cy.visit('/painel')
         cy.get('.text-3xl')
             .should('be.visible')
             .and('contain', 'Meu Painel')
@@ -25,7 +31,17 @@ describe('Meu Painel', () => {
         cy.contains('[role="tab"]', 'Meu Perfil').click()
         cy.get('.rounded-lg > .flex > .text-2xl')
             .should('be.visible')
-            .and('contain', 'Informações do Perfil') 
+            .and('contain', 'Informações do Perfil')
+    })
+
+    it('Informações do perfil', () => {
+        cy.contains('[role="tab"]', 'Meu Perfil').click()
+        cy.get('.space-y-4 > :nth-child(1) > .text-muted-foreground')
+            .should('be.visible')
+            .and('contain', nomeAtual)
+        cy.get('.space-y-4 > :nth-child(2) > .text-muted-foreground')
+            .should('be.visible')
+            .and('contain', emailAtual)
     })
 
 })
