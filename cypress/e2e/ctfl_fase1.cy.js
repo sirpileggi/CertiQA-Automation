@@ -2,11 +2,12 @@
 
 describe('Certificação CTFL fase 1', () => {
     beforeEach(() => {
+
         cy.fixture('endereco_login').then((usuario) => {
             const chaveSessao = `ctfl-${usuario.email}`
 
             cy.session(chaveSessao, () => {
-                cy.realizarLogin(usuario.email, usuario.password)
+                  cy.realizarLogin(usuario.email, usuario.password)
             })
         })
     })
@@ -80,7 +81,9 @@ describe('Certificação CTFL fase 1', () => {
                 .should('be.visible')
                 .invoke('text')
                 .should('match', /^\d+% de acertos$/)
-
+            
+             cy.contains('button', 'Tentar Novamente').click()
+             
         })
     })
 });
