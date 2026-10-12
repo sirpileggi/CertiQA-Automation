@@ -10,22 +10,7 @@ describe('Certificação CTFL fase 1', () => {
             })
         })
     })
-    // Cenário 1: responder todas as questões corretamente deve gerar 10/10.
-    it('respostas 100% corretas', () => {
-        cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
-            cy.abrirFaseDoQuiz1()
-            cy.responderQuestionario(quiz.respostas_100_corretas)
-
-            cy.get('.text-center > p.text-gray-600')
-                .should('be.visible')
-                .invoke('text')
-                .should('match', /^\d+% de acertos$/)
-
-            cy.contains('p', 'Parabéns! Você passou!').should('be.visible')
-        })
-    })
-
-    // Cenário 2: responder todas as questões incorretamente deve gerar 0/10.
+    // Cenário 1: responder todas as questões incorretamente deve gerar 0/10.
     it('respostas 100% incorretas', () => {
         cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
             cy.abrirFaseDoQuiz1()
@@ -39,7 +24,6 @@ describe('Certificação CTFL fase 1', () => {
             cy.contains('button', 'Tentar Novamente').click()
         })
     })
-
     // Cenário 3: acertar 3 de 10 questões deve gerar 30% de acertos.
     it('respostas 30% de acertos', () => {
         cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
@@ -49,7 +33,7 @@ describe('Certificação CTFL fase 1', () => {
             cy.get('.text-center > p.text-gray-600')
                 .should('be.visible')
                 .invoke('text')
-                .should('match', /^\d+% de acertos$/)
+                .should('eq', '30% de acertos')
 
             cy.contains('button', 'Tentar Novamente').click()
         })
@@ -64,7 +48,7 @@ describe('Certificação CTFL fase 1', () => {
             cy.get('.text-center > p.text-gray-600')
                 .should('be.visible')
                 .invoke('text')
-                .should('match', /^\d+% de acertos$/)
+                .should('eq', '40% de acertos')
 
             cy.contains('button', 'Tentar Novamente').click()
         })
@@ -83,4 +67,19 @@ describe('Certificação CTFL fase 1', () => {
 
         })
     })
+    // Cenário 1: responder todas as questões corretamente deve gerar 10/10.
+    it('respostas 100% corretas', () => {
+        cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
+            cy.abrirFaseDoQuiz1()
+            cy.responderQuestionario(quiz.respostas_100_corretas)
+
+            cy.get('.text-center > p.text-gray-600')
+                .should('be.visible')
+                .invoke('text')
+                .should('match', /^\d+% de acertos$/)
+
+            cy.contains('p', 'Parabéns! Você passou!').should('be.visible')
+        })
+    })
+
 });
