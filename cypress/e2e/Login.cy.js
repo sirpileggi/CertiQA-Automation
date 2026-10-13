@@ -8,7 +8,7 @@ describe("Login", () => {
   //Clicar no botão de login
   //Verificar se o login foi bem-sucedido (ex: verificar se a página de dashboard é exibida)
 
-  it.only("Login com sucesso", () => {
+  it("Login com sucesso", () => {
     cy.visit("/"); //Acessar a página de login
     cy.get('.gap-4 > .border').click(); //Clicar no botão "Login"
     cy.get('#email').type("seuemail@gmail.com"); //Preenche email
