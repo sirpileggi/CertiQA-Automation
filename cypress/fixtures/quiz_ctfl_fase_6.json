@@ -1,0 +1,129 @@
+{
+    "respostas_100_corretas": [
+        {
+            "pergunta": "Qual é a principal responsabilidade do Gerente de Teste?",
+            "resposta": "Responsabilidade geral pelo processo de teste"
+        },
+        {
+            "pergunta": "O que é estratégia de teste?",
+            "resposta": "Abordagem geral, níveis e tipos de teste"
+        },
+        {
+            "pergunta": "Qual técnica de estimativa usa dados históricos?",
+            "resposta": "Estimativa baseada em métricas históricas"
+        },
+        {
+            "pergunta": "O que mede a métrica de cobertura?",
+            "resposta": "Quanto foi exercitado pelos testes"
+        },
+        {
+            "pergunta": "Qual é a diferença entre severidade e prioridade?",
+            "resposta": "Severidade: impacto técnico; Prioridade: urgência de negócio"
+        },
+        {
+            "pergunta": "O que são riscos de produto?",
+            "resposta": "Potenciais falhas no software"
+        },
+        {
+            "pergunta": "O que caracteriza a abordagem analítica?",
+            "resposta": "Baseada em análise de risco"
+        },
+        {
+            "pergunta": "Quando usar abordagem baseada em modelo?",
+            "resposta": "Quando há modelos do software disponíveis"
+        },
+        {
+            "pergunta": "O que é ciclo de vida de defeitos?",
+            "resposta": "Identificar, reportar, analisar, corrigir, verificar"
+        },
+        {
+            "pergunta": "Como medir progresso de teste?",
+            "resposta": "Casos executados, defeitos encontrados, cobertura"
+        }
+    ],
+
+    "respostas_50_porcento_corretas": [
+       {
+            "pergunta": "Qual é a principal responsabilidade do Gerente de Teste?",
+            "resposta": "Responsabilidade geral pelo processo de teste"
+        },
+        {
+            "pergunta": "O que é estratégia de teste?",
+            "resposta": "Abordagem geral, níveis e tipos de teste"
+        },
+        {
+            "pergunta": "Qual técnica de estimativa usa dados históricos?",
+            "resposta": "Estimativa baseada em métricas históricas"
+        },
+        {
+            "pergunta": "O que mede a métrica de cobertura?",
+            "resposta": "Quanto foi exercitado pelos testes"
+        },
+        {
+            "pergunta": "Qual é a diferença entre severidade e prioridade?",
+            "resposta": "Severidade: impacto técnico; Prioridade: urgência de negócio"
+        },
+        {
+            "pergunta": "O que são riscos de produto?",
+            "resposta": "Falta de recursos"
+        },
+        {
+            "pergunta": "O que caracteriza a abordagem analítica?",
+            "resposta": "Baseada em intuição"
+        },
+        {
+            "pergunta": "Quando usar abordagem baseada em modelo?",
+            "resposta": "Quando não há tempo suficiente"
+        },
+        {
+            "pergunta": "O que é ciclo de vida de defeitos?",
+            "resposta": "Apenas reportar e fechar"
+        },
+        {
+            "pergunta": "Como medir progresso de teste?",
+            "resposta": "Apenas tempo gasto"
+        }
+    ],
+    "respostas_100_incorretas": [
+        {
+            "pergunta": "Qual é a principal responsabilidade do Gerente de Teste?",
+            "resposta": "Escrever código de automação"
+        },
+        {
+            "pergunta": "O que é estratégia de teste?",
+            "resposta": "Cronograma de execução"
+        },
+        {
+            "pergunta": "Qual técnica de estimativa usa dados históricos?",
+            "resposta": "Estimativa aleatória"
+        },
+        {
+            "pergunta": "O que mede a métrica de cobertura?",
+            "resposta": "Tempo gasto testando"
+        },
+        {
+            "pergunta": "Qual é a diferença entre severidade e prioridade?",
+            "resposta": "Não há diferença"
+        },
+        {
+            "pergunta": "O que são riscos de produto?",
+            "resposta": "Falta de recursos"
+        },
+        {
+            "pergunta": "O que caracteriza a abordagem analítica?",
+            "resposta": "Baseada em intuição"
+        },
+        {
+            "pergunta": "Quando usar abordagem baseada em modelo?",
+            "resposta": "Quando não há tempo suficiente"
+        },
+        {
+            "pergunta": "O que é ciclo de vida de defeitos?",
+            "resposta": "Apenas reportar e fechar"
+        },
+        {
+            "pergunta": "Como medir progresso de teste?",
+            "resposta": "Apenas tempo gasto"
+        }
+    ]
+}
