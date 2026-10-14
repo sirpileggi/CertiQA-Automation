@@ -24,7 +24,7 @@ describe('Certificação CTFL fase 1', () => {
             cy.contains('button', 'Tentar Novamente').click()
         })
     })
-    // Cenário 3: acertar 3 de 10 questões deve gerar 30% de acertos.
+    // Cenário 2: acertar 3 de 10 questões deve gerar 30% de acertos.
     it('respostas 30% de acertos', () => {
         cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
             cy.abrirFaseDoQuiz1()
@@ -39,7 +39,7 @@ describe('Certificação CTFL fase 1', () => {
         })
     })
 
-    // Cenário 4: acertar 4 de 10 questões deve gerar 40% de acertos.
+    // Cenário 3: acertar 4 de 10 questões deve gerar 40% de acertos.
     it('respostas 40% de acertos', () => {
         cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
             cy.abrirFaseDoQuiz1()
@@ -54,7 +54,7 @@ describe('Certificação CTFL fase 1', () => {
         })
     })
 
-    // Cenário 5: acertar 5 de 10 questões deve gerar 50% de acertos.
+    // Cenário 4: acertar 5 de 10 questões deve gerar 50% de acertos.
     it('respostas 50% de acertos', () => {
         cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
             cy.abrirFaseDoQuiz1()
@@ -67,7 +67,7 @@ describe('Certificação CTFL fase 1', () => {
 
         })
     })
-    // Cenário 1: responder todas as questões corretamente deve gerar 10/10.
+    // Cenário 5: responder todas as questões corretamente deve gerar 10/10.
     it('respostas 100% corretas', () => {
         cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
             cy.abrirFaseDoQuiz1()
@@ -81,5 +81,4 @@ describe('Certificação CTFL fase 1', () => {
             cy.contains('p', 'Parabéns! Você passou!').should('be.visible')
         })
     })
-
 });
