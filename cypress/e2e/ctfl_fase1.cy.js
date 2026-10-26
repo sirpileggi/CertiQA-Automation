@@ -20,7 +20,7 @@ describe('Certificação CTFL fase 1', () => {
             cy.get('.text-center > p.text-gray-600')
                 .should('be.visible')
                 .invoke('text')
-                .should('match', /^\d+% de acertos$/)
+                .should('eq', '100% de acertos')
 
             cy.contains('p', 'Parabéns! Você passou!').should('be.visible')
         })
@@ -35,7 +35,7 @@ describe('Certificação CTFL fase 1', () => {
             cy.get('.text-center > p.text-gray-600')
                 .should('be.visible')
                 .invoke('text')
-                .should('match', /^\d+% de acertos$/)
+                .should('eq', '0% de acertos')
 
             cy.contains('button', 'Tentar Novamente').click()
         })
@@ -50,7 +50,7 @@ describe('Certificação CTFL fase 1', () => {
             cy.get('.text-center > p.text-gray-600')
                 .should('be.visible')
                 .invoke('text')
-                .should('match', /^\d+% de acertos$/)
+                .should('eq', '30% de acertos')
 
             cy.contains('button', 'Tentar Novamente').click()
         })
@@ -65,25 +65,25 @@ describe('Certificação CTFL fase 1', () => {
             cy.get('.text-center > p.text-gray-600')
                 .should('be.visible')
                 .invoke('text')
-                .should('match', /^\d+% de acertos$/)
+                .should('eq', '40% de acertos')
 
             cy.contains('button', 'Tentar Novamente').click()
         })
     })
 
-    // Cenário 5: acertar 5 de 10 questões deve gerar 50% de acertos.
-    it('respostas 50% de acertos', () => {
-        cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
+    // Cenário 5: acertar 6 de 10 questões deve gerar 60% de acertos.
+    it('respostas 60% de acertos', () => {
+        cy.fixture ('quiz_ctfl_fase_1').then((quiz) => {
+
             cy.abrirFaseDoQuiz1()
-            cy.responderQuestionario(quiz.respostas_50_porcento_corretas)
+            cy.responderQuestionario(quiz.respostas_60_porcento_corretas)
 
             cy.get('.text-center > p.text-gray-600')
                 .should('be.visible')
                 .invoke('text')
-                .should('match', /^\d+% de acertos$/)
-            
-             cy.contains('button', 'Tentar Novamente').click()
-             
+                .should('eq', '60% de acertos')
+
+            cy.contains('p', 'Parabéns! Você passou!').should('be.visible')
         })
     })
 });
