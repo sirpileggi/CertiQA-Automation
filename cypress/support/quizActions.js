@@ -47,6 +47,16 @@ const abrirFaseDoQuiz3 = () => {
   cy.contains('button', /Iniciar Quiz|Refazer Quiz/i).click()
 }
 
+const abrirFaseDoQuiz4 = () => {
+  cy.visit('/certificacoes')
+  cy.contains('a', /^Iniciar Estudo$/i).click()
+  cy.location('pathname').should('eq', '/certificacoes/ctfl')
+  cy.contains('Seu Progresso').should('be.visible')
+  cy.get('a[href="/certificacoes/ctfl/fase/test-analysis"]').first().click()
+  cy.location('pathname').should('eq', '/certificacoes/ctfl/fase/test-analysis')
+  cy.contains('button', /Iniciar Quiz|Refazer Quiz/i).click()
+}
+
 const abrirFaseDoQuiz5 = () => {
   cy.visit('/certificacoes')
   cy.contains('a', /^Iniciar Estudo$/i).click()
@@ -71,5 +81,6 @@ Cypress.Commands.add('responderQuestionario', responderQuestionario)
 Cypress.Commands.add('abrirFaseDoQuiz1', abrirFaseDoQuiz1)
 Cypress.Commands.add('abrirFaseDoQuiz2', abrirFaseDoQuiz2)
 Cypress.Commands.add('abrirFaseDoQuiz3', abrirFaseDoQuiz3)
+Cypress.Commands.add('abrirFaseDoQuiz4', abrirFaseDoQuiz4)
 Cypress.Commands.add('abrirFaseDoQuiz5', abrirFaseDoQuiz5)
 Cypress.Commands.add('abrirFaseDoQuizCTFLAT1', abrirFaseDoQuizCTFLAT1)
