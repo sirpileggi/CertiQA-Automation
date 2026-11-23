@@ -20,9 +20,9 @@ describe('Cadastro de usuário', () => {
     it('Cadastrar um usuário com sucesso', () => {
 
 		cy.get(`[placeholder="${nomePlaceholder}"]`).type('Usuário de Teste')
-		cy.get(`[placeholder="${emailPlaceholder}"]`).type('teste123@example.com')
-		cy.get(`[placeholder="${senhaPlaceholder}"]`).type('SenhaForte123')
-		cy.get(`[placeholder="${confirmarSenhaPlaceholder}"]`).type('SenhaForte123')
+		cy.get(`[placeholder="${emailPlaceholder}"]`).type('teste1234@example.com')
+		cy.get(`[placeholder="${senhaPlaceholder}"]`).type('SenhaForte1234')
+		cy.get(`[placeholder="${confirmarSenhaPlaceholder}"]`).type('SenhaForte1234')
         
 		cy.contains('button', 'Cadastrar').click()
 
@@ -44,17 +44,30 @@ describe('Cadastro de usuário', () => {
         cy.contains ('E-mail inválido').should('be.visible')
 	})
 ///cenario 5 impede o envio de um e-mail em formato inválido (sem @)
-it('Impede o envio de um e-mail em formato inválido (sem @)', () => {
+	it('Impede o envio de um e-mail em formato inválido (sem @)', () => {
 		cy.get(`[placeholder="${nomePlaceholder}"]`).type('Usuário de Teste')
 		cy.get(`[placeholder="${emailPlaceholder}"]`).type('email.invalidogmail.com')
 		cy.get(`[placeholder="${senhaPlaceholder}"]`).type('SenhaForte123')
 		cy.get(`[placeholder="${confirmarSenhaPlaceholder}"]`).type('SenhaForte123')
 		cy.contains('button', 'Cadastrar').click()
-        cy.contains ('E-mail inválido').should('be.visible')
+
+// Acessa a API de validação nativa do browser para identificar o tipo de erro e a mensagem exibida
+      cy.get('#email').then(($input) => {
+        const campo = $input[0]
+        expect(campo.validity.valid).to.be.false
+        expect(campo.validity.typeMismatch).to.be.true
+        const mensagem = campo.validationMessage
+        cy.log(' Mensagem nativa do browser: ' + mensagem)
+        expect(mensagem).to.not.be.empty
+      })
 	})
 ///cenario 6 senhas diferentes
 	it('Exibe erro quando a confirmação da senha é diferente', () => {
 		cy.get(`[placeholder="${nomePlaceholder}"]`).type('Usuário de Teste')
 		cy.get(`[placeholder="${emailPlaceholder}"]`).type('teste@example.com')
 		cy.get(`[placeholder="${senhaPlaceholder}"]`).type('SenhaForte123')
-		cy.get(`[placeholder="${confirmarSenhaPl
+		cy.get(`[placeholder="${confirmarSenhaPlaceholder}"]`).type('SenhaDiferente123')
+		cy.contains('button', 'Cadastrar').click()
+		cy.contains('As senhas não coincidem').should('be.visible')
+	})
+})

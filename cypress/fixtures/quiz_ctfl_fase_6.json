@@ -1,5 +1,5 @@
 {
-    "respostas_100_corretas": [
+    "respostas_100_porcento_corretas": [
         {
             "pergunta": "Qual é a principal responsabilidade do Gerente de Teste?",
             "resposta": "Responsabilidade geral pelo processo de teste"
@@ -66,6 +66,48 @@
         {
             "pergunta": "O que são riscos de produto?",
             "resposta": "Falta de recursos"
+        },
+        {
+            "pergunta": "O que caracteriza a abordagem analítica?",
+            "resposta": "Baseada em intuição"
+        },
+        {
+            "pergunta": "Quando usar abordagem baseada em modelo?",
+            "resposta": "Quando não há tempo suficiente"
+        },
+        {
+            "pergunta": "O que é ciclo de vida de defeitos?",
+            "resposta": "Apenas reportar e fechar"
+        },
+        {
+            "pergunta": "Como medir progresso de teste?",
+            "resposta": "Apenas tempo gasto"
+        }
+    ],
+    "respostas_60_porcento_corretas": [
+        {
+            "pergunta": "Qual é a principal responsabilidade do Gerente de Teste?",
+            "resposta": "Responsabilidade geral pelo processo de teste"
+        },
+        {
+            "pergunta": "O que é estratégia de teste?",
+            "resposta": "Abordagem geral, níveis e tipos de teste"
+        },
+        {
+            "pergunta": "Qual técnica de estimativa usa dados históricos?",
+            "resposta": "Estimativa baseada em métricas históricas"
+        },
+        {
+            "pergunta": "O que mede a métrica de cobertura?",
+            "resposta": "Quanto foi exercitado pelos testes"
+        },
+        {
+            "pergunta": "Qual é a diferença entre severidade e prioridade?",
+            "resposta": "Severidade: impacto técnico; Prioridade: urgência de negócio"
+        },
+        {
+            "pergunta": "O que são riscos de produto?",
+            "resposta": "Potenciais falhas no software"
         },
         {
             "pergunta": "O que caracteriza a abordagem analítica?",

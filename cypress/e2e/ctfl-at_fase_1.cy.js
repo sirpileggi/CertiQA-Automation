@@ -59,7 +59,19 @@ describe('Certificação CTFL-AT fase 1', () => {
         .should('eq', '50% de acertos')
     })
   }) 
-  // Cenário 5: Acertar todas as questões, deve gerar 100% de acertos.
+  // Cenário 5: acertar 6 de 10 questões deve gerar 60% de acertos.
+  it('respostas 60% de acertos', () => {
+    cy.fixture('quiz_ctfl-at_fase_1').then((quiz) => {
+      cy.abrirFaseDoQuizCTFLAT1()
+      cy.responderQuestionario(quiz.respostas_60_porcento_corretas)
+      
+      cy.get('.text-center > p.text-gray-600')
+        .should('be.visible')
+        .invoke('text')
+        .should('eq', '60% de acertos')
+    })
+  })
+  // Cenário 6: Acertar todas as questões, deve gerar 100% de acertos.
   it('respostas 100% de acertos', () => {
     cy.fixture('quiz_ctfl-at_fase_1').then((quiz) => {
       cy.abrirFaseDoQuizCTFLAT1()
