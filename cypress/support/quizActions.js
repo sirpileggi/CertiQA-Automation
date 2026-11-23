@@ -1,3 +1,10 @@
+const clicarBotaoQuiz = (texto) => {
+  cy.contains('button', texto, { timeout: 15000 })
+    .should('be.visible')
+    .and('be.enabled')
+  cy.contains('button', texto, { timeout: 15000 }).click()
+}
+
 const responderQuestionario = (respostas) => {
   respostas.forEach(({ pergunta, resposta }, index) => {
     cy.contains(pergunta, { timeout: 15000 }).should('be.visible')
@@ -6,13 +13,9 @@ const responderQuestionario = (respostas) => {
     const eUltimaPergunta = index === respostas.length - 1
 
     if (eUltimaPergunta) {
-      cy.contains('button', /Finalizar\s*\(\d+\/\d+\)|Finalizar/i, { timeout: 15000 })
-        .should('be.visible')
-        .click()
+      clicarBotaoQuiz(/Finalizar\s*\(\d+\/\d+\)|Finalizar/i)
     } else {
-      cy.contains('button', /^Próxima$/i, { timeout: 15000 })
-        .should('be.visible')
-        .click()
+      clicarBotaoQuiz(/^Próxima$/i)
     }
   })
 }
@@ -64,7 +67,30 @@ const abrirFaseDoQuizCTFLAT1 = () => {
   cy.contains('Seu Progresso').should('be.visible')
   cy.get('a[href="/certificacoes/ctfl-at/fase/ctfl-at-phase-1"]').first().click()
   cy.location('pathname').should('eq', '/certificacoes/ctfl-at/fase/ctfl-at-phase-1')
-  cy.contains('button', /Iniciar Quiz|Refazer Quiz|Continuar estudo|Revisar fase/i).click()
+  clicarBotaoQuiz(/Iniciar Quiz|Refazer Quiz|Continuar estudo|Revisar fase/i)
+}
+
+const abrirFaseDoQuizCTFLAT2 = () => {
+  cy.fixture('quiz_ctfl-at_fase_1').then((quiz) => {
+    cy.abrirFaseDoQuizCTFLAT1()
+    cy.responderQuestionario(quiz.respostas_100_porcento_corretas)
+
+    cy.get('.text-center > p.text-gray-600')
+      .should('be.visible')
+      .invoke('text')
+      .should('eq', '100% de acertos')
+
+    clicarBotaoQuiz('Voltar para a Fase')
+    cy.location('pathname').should('eq', '/certificacoes/ctfl-at/fase/ctfl-at-phase-1')
+  }).then(() => {
+    cy.visit('/certificacoes')
+    cy.contains('a[href="/certificacoes/ctfl-at"]', /^Iniciar Estudo$/i).click()
+    cy.location('pathname').should('eq', '/certificacoes/ctfl-at')
+    cy.contains('Seu Progresso').should('be.visible')
+    cy.get('a[href="/certificacoes/ctfl-at/fase/ctfl-at-phase-2"]', { timeout: 15000 }).first().click()
+    cy.location('pathname').should('eq', '/certificacoes/ctfl-at/fase/ctfl-at-phase-2')
+    clicarBotaoQuiz(/Iniciar Quiz|Refazer Quiz|Continuar estudo|Revisar fase/i)
+  })
 }
 
 Cypress.Commands.add('responderQuestionario', responderQuestionario)
@@ -73,3 +99,4 @@ Cypress.Commands.add('abrirFaseDoQuiz2', abrirFaseDoQuiz2)
 Cypress.Commands.add('abrirFaseDoQuiz3', abrirFaseDoQuiz3)
 Cypress.Commands.add('abrirFaseDoQuiz5', abrirFaseDoQuiz5)
 Cypress.Commands.add('abrirFaseDoQuizCTFLAT1', abrirFaseDoQuizCTFLAT1)
+Cypress.Commands.add('abrirFaseDoQuizCTFLAT2', abrirFaseDoQuizCTFLAT2)

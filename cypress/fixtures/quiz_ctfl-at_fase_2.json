@@ -1,0 +1,130 @@
+{
+  "respostas_100_porcento_incorretas": [
+    {
+      "pergunta": "O que caracteriza a Pirâmide de Testes em projetos ágeis?",
+      "resposta": "Todos os tipos de teste em igual quantidade"
+    },
+    {
+      "pergunta": "No Planning Poker, qual é o principal objetivo?",
+      "resposta": "Que o gerente defina todas as estimativas"
+    },
+    {
+      "pergunta": "O que são Pontos de História?",
+      "resposta": "Custo financeiro do desenvolvimento"
+    },
+    {
+      "pergunta": "Qual é uma característica das equipes multifuncionais?",
+      "resposta": "Responsabilidade definida por hierarquia"
+    },
+    {
+      "pergunta": "O que é Integração Contínua no contexto ágil?",
+      "resposta": "Integração de código apenas no final do sprint"
+    },
+    {
+      "pergunta": "Por que testes de interface estão no topo da Pirâmide de Testes?",
+      "resposta": "São mais fáceis de implementar"
+    },
+    {
+      "pergunta": "Como Planning Poker reduz viés individual em estimativas?",
+      "resposta": "Permite que uma pessoa decida sozinha"
+    },
+    {
+      "pergunta": "Qual é a vantagem das reviews de sprint?",
+      "resposta": "Culpar membros por problemas"
+    },
+    {
+      "pergunta": "Como equipes multifuncionais reduzem dependências?",
+      "resposta": "Precisam de mais especialistas externos"
+    },
+    {
+      "pergunta": "Por que automação de testes é importante em projetos ágeis?",
+      "resposta": "Reduz trabalho da equipe"
+    }
+  ],
+
+  "respostas_50_porcento_corretas": [
+    {
+      "pergunta": "O que caracteriza a Pirâmide de Testes em projetos ágeis?",
+      "resposta": "Muitos testes unitários, poucos testes de interface"
+    },
+    {
+      "pergunta": "No Planning Poker, qual é o principal objetivo?",
+      "resposta": "Obter consenso da equipe sobre complexidade"
+    },
+    {
+      "pergunta": "O que são Pontos de História?",
+      "resposta": "Medida relativa de esforço baseada em complexidade"
+    },
+    {
+      "pergunta": "Qual é uma característica das equipes multifuncionais?",
+      "resposta": "Responsabilidade compartilhada pela qualidade"
+    },
+    {
+      "pergunta": "O que é Integração Contínua no contexto ágil?",
+      "resposta": "Build automático e testes a cada mudança"
+    },
+    {
+      "pergunta": "Por que testes de interface estão no topo da Pirâmide de Testes?",
+      "resposta": "São mais fáceis de implementar"
+    },
+    {
+      "pergunta": "Como Planning Poker reduz viés individual em estimativas?",
+      "resposta": "Permite que uma pessoa decida sozinha"
+    },
+    {
+      "pergunta": "Qual é a vantagem das reviews de sprint?",
+      "resposta": "Culpar membros por problemas"
+    },
+    {
+      "pergunta": "Como equipes multifuncionais reduzem dependências?",
+      "resposta": "Precisam de mais especialistas externos"
+    },
+    {
+      "pergunta": "Por que automação de testes é importante em projetos ágeis?",
+      "resposta": "Reduz trabalho da equipe"
+    }
+  ],
+
+  "respostas_100_porcento_corretas": [
+    {
+      "pergunta": "O que caracteriza a Pirâmide de Testes em projetos ágeis?",
+      "resposta": "Muitos testes unitários, poucos testes de interface"
+    },
+    {
+      "pergunta": "No Planning Poker, qual é o principal objetivo?",
+      "resposta": "Obter consenso da equipe sobre complexidade"
+    },
+    {
+      "pergunta": "O que são Pontos de História?",
+      "resposta": "Medida relativa de esforço baseada em complexidade"
+    },
+    {
+      "pergunta": "Qual é uma característica das equipes multifuncionais?",
+      "resposta": "Responsabilidade compartilhada pela qualidade"
+    },
+    {
+      "pergunta": "O que é Integração Contínua no contexto ágil?",
+      "resposta": "Build automático e testes a cada mudança"
+    },
+    {
+      "pergunta": "Por que testes de interface estão no topo da Pirâmide de Testes?",
+      "resposta": "São mais caros, lentos e difíceis de manter"
+    },
+    {
+      "pergunta": "Como Planning Poker reduz viés individual em estimativas?",
+      "resposta": "Força discussão e consenso da equipe"
+    },
+    {
+      "pergunta": "Qual é a vantagem das reviews de sprint?",
+      "resposta": "Demonstrar funcionalidades e obter feedback"
+    },
+    {
+      "pergunta": "Como equipes multifuncionais reduzem dependências?",
+      "resposta": "Têm todas habilidades internamente"
+    },
+    {
+      "pergunta": "Por que automação de testes é importante em projetos ágeis?",
+      "resposta": "Permite execução rápida e frequente"
+    }
+  ]
+}
