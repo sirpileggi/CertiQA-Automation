@@ -11,19 +11,7 @@ describe('Certificação CTFL-AT fase 2', () => {
     })
   })
 
-    it('Todas as questões corretas', () => {
-    cy.fixture('quiz_ctfl-at_fase_2').then((quiz) => {
-      cy.abrirFaseDoQuizCTFLAT2()
-      cy.responderQuestionario(quiz.respostas_100_porcento_corretas)
-
-      cy.get('.text-center > p.text-gray-600')
-        .should('be.visible')
-        .invoke('text')
-        .should('eq', '100% de acertos')
-    })
-  })
-
-  it('Todas as questões incorretas', () => {
+  it('respostas 100% incorretas', () => {
     cy.fixture('quiz_ctfl-at_fase_2').then((quiz) => {
       cy.abrirFaseDoQuizCTFLAT2()
       cy.responderQuestionario(quiz.respostas_100_porcento_incorretas)
@@ -35,7 +23,31 @@ describe('Certificação CTFL-AT fase 2', () => {
     })
   })
 
-  it('Metade das questões corretas', () => {
+  it('respostas 30% de acertos', () => {
+    cy.fixture('quiz_ctfl-at_fase_2').then((quiz) => {
+      cy.abrirFaseDoQuizCTFLAT2()
+      cy.responderQuestionario(quiz.respostas_30_porcento_corretas)
+
+      cy.get('.text-center > p.text-gray-600')
+        .should('be.visible')
+        .invoke('text')
+        .should('eq', '30% de acertos')
+    })
+  })
+
+  it('respostas 40% de acertos', () => {
+    cy.fixture('quiz_ctfl-at_fase_2').then((quiz) => {
+      cy.abrirFaseDoQuizCTFLAT2()
+      cy.responderQuestionario(quiz.respostas_40_porcento_corretas)
+
+      cy.get('.text-center > p.text-gray-600')
+        .should('be.visible')
+        .invoke('text')
+        .should('eq', '40% de acertos')
+    })
+  })
+
+  it('respostas 50% de acertos', () => {
     cy.fixture('quiz_ctfl-at_fase_2').then((quiz) => {
       cy.abrirFaseDoQuizCTFLAT2()
       cy.responderQuestionario(quiz.respostas_50_porcento_corretas)
@@ -47,5 +59,27 @@ describe('Certificação CTFL-AT fase 2', () => {
     })
   })
 
+  it('respostas 60% de acertos', () => {
+    cy.fixture('quiz_ctfl-at_fase_2').then((quiz) => {
+      cy.abrirFaseDoQuizCTFLAT2()
+      cy.responderQuestionario(quiz.respostas_60_porcento_corretas)
 
+      cy.get('.text-center > p.text-gray-600')
+        .should('be.visible')
+        .invoke('text')
+        .should('eq', '60% de acertos')
+    })
+  })
+
+  it('respostas 100% corretas', () => {
+    cy.fixture('quiz_ctfl-at_fase_2').then((quiz) => {
+      cy.abrirFaseDoQuizCTFLAT2()
+      cy.responderQuestionario(quiz.respostas_100_porcento_corretas)
+
+      cy.get('.text-center > p.text-gray-600')
+        .should('be.visible')
+        .invoke('text')
+        .should('eq', '100% de acertos')
+    })
+  })
 })

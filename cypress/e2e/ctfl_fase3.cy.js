@@ -36,6 +36,18 @@ describe('Certificação CTFL fase 3', () => {
         .should('match', /^\d+% de acertos$/)
     })
   })
+
+   it('respostas aproximadamente 60% corretas', () => {
+    cy.fixture('quiz_ctfl_fase_3').then((quiz) => {
+      cy.abrirFaseDoQuiz3()
+      cy.responderQuestionario(quiz.respostas_60_porcento_corretas)
+
+      cy.get('.text-center > p.text-gray-600')
+        .should('be.visible')
+        .invoke('text')
+        .should('match', /^(62(?:[.,]5)?|63)% de acertos$/)
+    })
+  })
   
     it('respostas 100% corretas', () => {
     cy.fixture('quiz_ctfl_fase_3').then((quiz) => {
@@ -51,4 +63,3 @@ describe('Certificação CTFL fase 3', () => {
     })
   })
 })
-  

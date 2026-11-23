@@ -67,6 +67,40 @@
             "resposta": "Define quando produto está pronto para revisão"
         }
     ],
+    "respostas_60_porcento_corretas": [
+        {
+            "pergunta": "Qual é a principal diferença entre teste estático e teste dinâmico?",
+            "resposta": "Teste estático verifica o código sem executá-lo, teste dinâmico executa o código"
+        },
+        {
+            "pergunta": "O que pode ser revisado em teste estático?",
+            "resposta": "Requisitos, código, documentação, casos de teste"
+        },
+        {
+            "pergunta": "Qual é o papel do moderador em uma inspeção?",
+            "resposta": "Facilita a reunião e garante que processo seja seguido"
+        },
+        {
+            "pergunta": "O que é uma entrada (entry criteria) para revisão?",
+            "resposta": "Define quando produto está pronto para revisão"
+        },
+        {
+            "pergunta": "Qual ferramenta automatiza análise estática?",
+            "resposta": "Analisadores estáticos"
+        },
+        {
+            "pergunta": "O que caracteriza um walkthrough?",
+            "resposta": "Sempre formal com papéis definidos"
+        },
+        {
+            "pergunta": "Quando defeitos são mais baratos de corrigir?",
+            "resposta": "Apenas após testes dinâmicos"
+        },
+        {
+            "pergunta": "O que é saída (exit criteria) de revisão?",
+            "resposta": "Define quando produto está pronto para revisão"
+        }
+    ],
     "respostas_100_corretas": [
         {
             "pergunta": "Qual é a principal diferença entre teste estático e teste dinâmico?",

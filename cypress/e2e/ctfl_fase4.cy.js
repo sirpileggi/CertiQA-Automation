@@ -40,7 +40,7 @@ describe('Certificação CTFL fase 4', () => {
         })
     })
 
-    // Cenário 3: acertar 6 de 10 questões deve gerar 50% de acertos.
+    // Cenário 3: acertar 6 de 10 questões deve gerar 60% de acertos.
     it('respostas 60% de acertos', () => {
         cy.fixture('quiz_ctfl_fase_4').then((quiz) => {
             cy.abrirFaseDoQuiz4()
@@ -49,7 +49,7 @@ describe('Certificação CTFL fase 4', () => {
             cy.get('.text-center > p.text-gray-600')
                 .should('be.visible')
                 .invoke('text')
-                .should('match', /^\d+% de acertos$/)
+                .should('eq', '60% de acertos')
             
               cy.contains('p', 'Parabéns! Você passou!').should('be.visible')
              

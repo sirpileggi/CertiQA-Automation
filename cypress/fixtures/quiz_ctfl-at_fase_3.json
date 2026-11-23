@@ -1,0 +1,129 @@
+{
+  "respostas_100_porcento_corretas": [
+    {
+      "pergunta": "Qual é o ciclo do Test-Driven Development (TDD)?",
+      "resposta": "Red-Green-Refactor"
+    },
+    {
+      "pergunta": "No contexto de ATDD, quem são os \"Three Amigos\"?",
+      "resposta": "Product Owner, Developer, Tester"
+    },
+    {
+      "pergunta": "Qual é a estrutura básica da linguagem Gherkin no BDD?",
+      "resposta": "Given-When-Then"
+    },
+    {
+      "pergunta": "O que caracteriza o teste exploratório?",
+      "resposta": "Investigação simultânea de aprendizado, design e execução"
+    },
+    {
+      "pergunta": "O que é Session-Based Testing?",
+      "resposta": "Abordagem estruturada com missão e tempo definidos"
+    },
+    {
+      "pergunta": "Por que o passo \"Red\" é importante no TDD?",
+      "resposta": "Garante que o teste realmente falha quando deveria"
+    },
+    {
+      "pergunta": "Como ATDD melhora o entendimento de requisitos?",
+      "resposta": "Define critérios claros antes do desenvolvimento"
+    },
+    {
+      "pergunta": "Qual é a vantagem dos cenários Gherkin no BDD?",
+      "resposta": "Usam linguagem natural estruturada"
+    },
+    {
+      "pergunta": "Como teste exploratório complementa testes automatizados?",
+      "resposta": "Descobre problemas não previstos"
+    },
+    {
+      "pergunta": "Por que debriefing é importante em Session-Based Testing?",
+      "resposta": "Captura conhecimento e documenta descobertas"
+    }
+  ],
+  
+  "respostas_100_porcento_incorretas": [
+    {
+      "pergunta": "Qual é o ciclo do Test-Driven Development (TDD)?",
+      "resposta": "Code-Test-Deploy"
+    },
+    {
+      "pergunta": "No contexto de ATDD, quem são os \"Three Amigos\"?",
+      "resposta": "Gerente, Developer, Cliente"
+    },
+    {
+      "pergunta": "Qual é a estrutura básica da linguagem Gherkin no BDD?",
+      "resposta": "If-Then-Else"
+    },
+    {
+      "pergunta": "O que caracteriza o teste exploratório?",
+      "resposta": "Execução de casos de teste predefinidos"
+    },
+    {
+      "pergunta": "O que é Session-Based Testing?",
+      "resposta": "Teste contínuo sem estrutura"
+    },
+    {
+      "pergunta": "Por que o passo \"Red\" é importante no TDD?",
+      "resposta": "É apenas uma convenção sem importância"
+    },
+    {
+      "pergunta": "Como ATDD melhora o entendimento de requisitos?",
+      "resposta": "Elimina necessidade de documentação"
+    },
+    {
+      "pergunta": "Qual é a vantagem dos cenários Gherkin no BDD?",
+      "resposta": "São mais técnicos que outras abordagens"
+    },
+    {
+      "pergunta": "Como teste exploratório complementa testes automatizados?",
+      "resposta": "Substitui completamente testes automatizados"
+    },
+    {
+      "pergunta": "Por que debriefing é importante em Session-Based Testing?",
+      "resposta": "É perda de tempo desnecessária"
+    }
+  ],
+  "respostas_60_porcento_corretas": [
+    {
+      "pergunta": "Qual é o ciclo do Test-Driven Development (TDD)?",
+      "resposta": "Red-Green-Refactor"
+    },
+    {
+      "pergunta": "No contexto de ATDD, quem são os \"Three Amigos\"?",
+      "resposta": "Product Owner, Developer, Tester"
+    },
+    {
+      "pergunta": "Qual é a estrutura básica da linguagem Gherkin no BDD?",
+      "resposta": "Given-When-Then"
+    },
+    {
+      "pergunta": "O que caracteriza o teste exploratório?",
+      "resposta": "Investigação simultânea de aprendizado, design e execução"
+    },
+    {
+      "pergunta": "O que é Session-Based Testing?",
+      "resposta": "Abordagem estruturada com missão e tempo definidos"
+    },
+    {
+      "pergunta": "Por que o passo \"Red\" é importante no TDD?",
+      "resposta": "Garante que o teste realmente falha quando deveria"
+    },
+    {
+      "pergunta": "Como ATDD melhora o entendimento de requisitos?",
+      "resposta": "Elimina necessidade de documentação"
+    },
+    {
+      "pergunta": "Qual é a vantagem dos cenários Gherkin no BDD?",
+      "resposta": "São mais técnicos que outras abordagens"
+    },
+    {
+      "pergunta": "Como teste exploratório complementa testes automatizados?",
+      "resposta": "Substitui completamente testes automatizados"
+    },
+    {
+      "pergunta": "Por que debriefing é importante em Session-Based Testing?",
+      "resposta": "É perda de tempo desnecessária"
+    }
+  ]
+}

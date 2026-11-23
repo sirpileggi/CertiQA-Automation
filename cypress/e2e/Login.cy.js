@@ -11,8 +11,8 @@ describe("Login", () => {
   it("Login com sucesso", () => {
     cy.visit("/"); //Acessar a página de login
     cy.get('.gap-4 > .border').click(); //Clicar no botão "Login"
-    cy.get('#email').type("seuemail@gmail.com"); //Preenche email
-    cy.get('#password').type("suasenha"); // Preenche senha
+    cy.get('#email').type("digilmar@gmail.com"); //Preenche email
+    cy.get('#password').type("gfsilva123456"); // Preenche senha
     cy.get('.inline-flex').click(); //Clicar no botão "Entrar"
     cy.get('.grid > .font-semibold')
       .should('be.visible').and('contain', 'Login bem-sucedido'); //Verifica se o login foi bem-sucedido

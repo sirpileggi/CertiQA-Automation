@@ -37,6 +37,18 @@ describe('Certificação CTFL fase 5', () => {
     })
   })
 
+  it('Respostas 60% corretas', () => {
+    cy.fixture('quiz_ctfl_fase_5').then((quiz) => {
+      cy.abrirFaseDoQuiz5()
+      cy.responderQuestionario(quiz.respostas_60_porcento_corretas)
+
+      cy.get('.text-center > p.text-gray-600')
+        .should('be.visible')
+        .invoke('text')
+        .should('eq', '60% de acertos')
+    })
+  })
+
   it('Respostas 100% corretas', () => {
     cy.fixture('quiz_ctfl_fase_5').then((quiz) => {
       cy.abrirFaseDoQuiz5()
