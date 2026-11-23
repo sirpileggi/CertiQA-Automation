@@ -1,0 +1,171 @@
+{
+    "respostas_100_corretas": [
+        {
+            "pergunta": "Qual técnica é mais adequada para testar regras de negócio complexas?",
+            "resposta": "Teste de Tabela de Decisão"
+        },
+        {
+            "pergunta": "O que caracteriza as técnicas caixa-preta?",
+            "resposta": "Baseadas na especificação e comportamento observável"
+        },
+        {
+            "pergunta": "Quando usar Análise de Valor Limite?",
+            "resposta": "Para testar valores nos limites das partições"
+        },
+        {
+            "pergunta": "O que é teste de transição de estado?",
+            "resposta": "Modela software como máquina de estados"
+        },
+        {
+            "pergunta": "Qual técnica usa a experiência do testador?",
+            "resposta": "Suposição de erro (Error Guessing)"
+        },
+        {
+            "pergunta": "O que é cobertura de decisão?",
+            "resposta": "Exercita todas as decisões no código"
+        },
+        {
+            "pergunta": "Quando usar teste exploratório?",
+            "resposta": "Combina aprendizado, design e execução simultâneos"
+        },
+        {
+            "pergunta": "O que caracteriza teste baseado em caso de uso?",
+            "resposta": "Deriva casos de teste de casos de uso"
+        },
+        {
+            "pergunta": "Qual é o objetivo da cobertura de instrução?",
+            "resposta": "Exercitar todas as declarações executáveis"
+        },
+        {
+            "pergunta": "Como escolher a técnica de teste adequada?",
+            "resposta": "Depende do tipo de sistema, requisitos e recursos"
+        }
+    ],
+    "respostas_100_incorretas": [
+        {
+            "pergunta": "Qual técnica é mais adequada para testar regras de negócio complexas?",
+            "resposta": "Análise de Valor Limite"
+        },
+        {
+            "pergunta": "O que caracteriza as técnicas caixa-preta?",
+            "resposta": "Baseadas na estrutura interna do código"
+        },
+        {
+            "pergunta": "Quando usar Análise de Valor Limite?",
+            "resposta": "Para testar valores no centro das partições"
+        },
+        {
+            "pergunta": "O que é teste de transição de estado?",
+            "resposta": "Verifica performance do sistema"
+        },
+        {
+            "pergunta": "Qual técnica usa a experiência do testador?",
+            "resposta": "Teste de Instrução"
+        },
+        {
+            "pergunta": "O que é cobertura de decisão?",
+            "resposta": "Analisa requisitos"
+        },
+        {
+            "pergunta": "Quando usar teste exploratório?",
+            "resposta": "Segue roteiro rígido predefinido"
+        },
+        {
+            "pergunta": "O que caracteriza teste baseado em caso de uso?",
+            "resposta": "Testa apenas código fonte"
+        },
+        {
+            "pergunta": "Qual é o objetivo da cobertura de instrução?",
+            "resposta": "Verificar documentação completa"
+        },
+        {
+            "pergunta": "Como escolher a técnica de teste adequada?",
+            "resposta": "Escolher aleatoriamente"
+        }
+    ],
+    "respostas_30_porcento_corretas": [
+        {
+            "pergunta": "Qual técnica é mais adequada para testar regras de negócio complexas?",
+            "resposta": "Teste de Tabela de Decisão"
+        },
+        {
+            "pergunta": "O que caracteriza as técnicas caixa-preta?",
+            "resposta": "Baseadas na estrutura interna do código"
+        },
+        {
+            "pergunta": "Quando usar Análise de Valor Limite?",
+            "resposta": "Para testar valores nos limites das partições"
+        },
+        {
+            "pergunta": "O que é teste de transição de estado?",
+            "resposta": "Verifica performance do sistema"
+        },
+        {
+            "pergunta": "Qual técnica usa a experiência do testador?",
+            "resposta": "Suposição de erro (Error Guessing)"
+        },
+        {
+            "pergunta": "O que é cobertura de decisão?",
+            "resposta": "Analisa requisitos"
+        },
+        {
+            "pergunta": "Quando usar teste exploratório?",
+            "resposta": "Segue roteiro rígido predefinido"
+        },
+        {
+            "pergunta": "O que caracteriza teste baseado em caso de uso?",
+            "resposta": "Testa apenas código fonte"
+        },
+        {
+            "pergunta": "Qual é o objetivo da cobertura de instrução?",
+            "resposta": "Verificar documentação completa"
+        },
+        {
+            "pergunta": "Como escolher a técnica de teste adequada?",
+            "resposta": "Escolher aleatoriamente"
+        }
+    ],
+    
+    "respostas_60_porcento_corretas": [
+        {
+            "pergunta": "Qual técnica é mais adequada para testar regras de negócio complexas?",
+            "resposta": "Teste de Tabela de Decisão"
+        },
+        {
+            "pergunta": "O que caracteriza as técnicas caixa-preta?",
+            "resposta": "Baseadas na estrutura interna do código"
+        },
+        {
+            "pergunta": "Quando usar Análise de Valor Limite?",
+            "resposta": "Para testar valores nos limites das partições"
+        },
+        {
+            "pergunta": "O que é teste de transição de estado?",
+            "resposta": "Verifica performance do sistema"
+        },
+        {
+            "pergunta": "Qual técnica usa a experiência do testador?",
+            "resposta": "Suposição de erro (Error Guessing)"
+        },
+        {
+            "pergunta": "O que é cobertura de decisão?",
+            "resposta": "Analisa requisitos"
+        },
+        {
+            "pergunta": "Quando usar teste exploratório?",
+            "resposta": "Combina aprendizado, design e execução simultâneos"
+        },
+        {
+            "pergunta": "O que caracteriza teste baseado em caso de uso?",
+            "resposta": "Deriva casos de teste de casos de uso"
+        },
+        {
+            "pergunta": "Qual é o objetivo da cobertura de instrução?",
+            "resposta": "Verificar documentação completa"
+        },
+        {
+            "pergunta": "Como escolher a técnica de teste adequada?",
+            "resposta": "Depende do tipo de sistema, requisitos e recursos"
+        }
+    ]
+}
