@@ -45,7 +45,7 @@ cypress/
 │
 ├── e2e/
 │   ├── explorer.cy.js
-│   ├── Login.cy.js
+│   ├── login.cy.js
 │   └── smoke.cy.js
 │
 ├── support/
@@ -61,7 +61,7 @@ package-lock.json
 
 | Arquivo | Descrição |
 |----------|-----------|
-| **Login.cy.js** | Testes relacionados à autenticação dos usuários. |
+| **login.cy.js** | Testes relacionados à autenticação dos usuários. |
 | **explorer.cy.js** | Fluxos de navegação e exploração da aplicação. |
 | **smoke.cy.js** | Testes rápidos para validar as principais funcionalidades da plataforma. |
 
