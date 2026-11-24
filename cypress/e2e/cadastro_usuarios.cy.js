@@ -18,14 +18,14 @@ describe('Cadastro de usuário', () => {
 	})
 ///cenario 2 cadastro com sucesso  
     it('Cadastrar um usuário com sucesso', () => {
+		cy.fixture('endereco_login').then((usuario) => {
+			cy.get(`[placeholder="${nomePlaceholder}"]`).type('Usuário de Teste')
+			cy.get(`[placeholder="${emailPlaceholder}"]`).type(usuario.email)
+			cy.get(`[placeholder="${senhaPlaceholder}"]`).type(usuario.password)
+			cy.get(`[placeholder="${confirmarSenhaPlaceholder}"]`).type(usuario.password)
 
-		cy.get(`[placeholder="${nomePlaceholder}"]`).type('Usuário de Teste')
-		cy.get(`[placeholder="${emailPlaceholder}"]`).type('teste1234@example.com')
-		cy.get(`[placeholder="${senhaPlaceholder}"]`).type('SenhaForte1234')
-		cy.get(`[placeholder="${confirmarSenhaPlaceholder}"]`).type('SenhaForte1234')
-        
-		cy.contains('button', 'Cadastrar').click()
-
+			cy.contains('button', 'Cadastrar').click()
+		})
 })
 /// cenario 3 apresenta mensagens de erro ao tentar cadastrar sem preencher os campos obrigatorios
 	it('Exibe mensagens ao tentar cadastrar sem preencher os campos obrigatórios', () => {

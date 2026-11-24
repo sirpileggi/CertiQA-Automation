@@ -1,13 +1,15 @@
 describe("smoke", () => {
   beforeEach(() => {
-    cy.visit("https://certiqa.qazando.com.br/");
-    cy.get(".gap-4 > .border").click();
-    cy.get('[name="email"]').type("digilmar@gmail.com");
-    cy.get('[name="password"]').type("gfsilva123456");
-    cy.get(".inline-flex").click();
-    cy.get(".grid > .font-semibold")
-      .should("be.visible")
-      .and("contain", "Login bem-sucedido");
+    cy.fixture("endereco_login").then((usuario) => {
+      cy.visit("https://certiqa.qazando.com.br/");
+      cy.get(".gap-4 > .border").click();
+      cy.get('[name="email"]').type(usuario.email);
+      cy.get('[name="password"]').type(usuario.password);
+      cy.get(".inline-flex").click();
+      cy.get(".grid > .font-semibold")
+        .should("be.visible")
+        .and("contain", "Login bem-sucedido");
+    });
   });
 
   it("Acessar Certificações", () => {
