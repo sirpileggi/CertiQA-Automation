@@ -10,6 +10,7 @@ describe('Certificação CTFL-AT fase 1', () => {
       })
     })
   })
+
 // Cenário 1: responder todas as questões incorretamente deve gerar 0/10.
   it('respostas 100% incorretas', () => {
     cy.fixture('quiz_ctfl-at_fase_1').then((quiz) => {
@@ -35,6 +36,7 @@ describe('Certificação CTFL-AT fase 1', () => {
         .should('eq', '30% de acertos')
     })
   })
+
 // Cenário 3: Acertar 4 de 10 questões deve gerar 40% de acertos.
   it('respostas 40% de acertos', () => {
     cy.fixture('quiz_ctfl-at_fase_1').then((quiz) => {
@@ -47,6 +49,7 @@ describe('Certificação CTFL-AT fase 1', () => {
         .should('eq', '40% de acertos')
     })
   })   
+
   // Cenário 4: Acertar 5 de 10 questões deve gerar 50% de acertos.
   it('respostas 50% de acertos', () => {
     cy.fixture('quiz_ctfl-at_fase_1').then((quiz) => {
@@ -59,6 +62,7 @@ describe('Certificação CTFL-AT fase 1', () => {
         .should('eq', '50% de acertos')
     })
   }) 
+
   // Cenário 5: acertar 6 de 10 questões deve gerar 60% de acertos.
   it('respostas 60% de acertos', () => {
     cy.fixture('quiz_ctfl-at_fase_1').then((quiz) => {
@@ -71,6 +75,7 @@ describe('Certificação CTFL-AT fase 1', () => {
         .should('eq', '60% de acertos')
     })
   })
+
   // Cenário 6: Acertar todas as questões, deve gerar 100% de acertos.
   it('respostas 100% de acertos', () => {
     cy.fixture('quiz_ctfl-at_fase_1').then((quiz) => {

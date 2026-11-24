@@ -11,6 +11,7 @@ describe('Certificação CTFL fase 4', () => {
             })
         })
     })
+
     // Cenário 1: responder todas as questões incorretamente deve gerar 0/10.
     it('respostas 100% incorretas', () => {
         cy.fixture('quiz_ctfl_fase_4').then((quiz) => {
@@ -25,6 +26,7 @@ describe('Certificação CTFL fase 4', () => {
             cy.contains('button', 'Tentar Novamente').click()
         })
     })
+
     // Cenário 2: acertar 3 de 10 questões deve gerar 30% de acertos.
     it('respostas 30% de acertos', () => {
         cy.fixture('quiz_ctfl_fase_4').then((quiz) => {
@@ -55,6 +57,7 @@ describe('Certificação CTFL fase 4', () => {
              
         })
     })
+    
     // Cenário 5: responder todas as questões corretamente deve gerar 10/10.
     it('respostas 100% corretas', () => {
         cy.fixture('quiz_ctfl_fase_4').then((quiz) => {
