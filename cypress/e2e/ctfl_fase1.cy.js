@@ -11,6 +11,7 @@ describe('Certificação CTFL fase 1', () => {
             })
         })
     })
+
     // Cenário 1: responder todas as questões incorretamente deve gerar 0/10.
     it('respostas 100% incorretas', () => {
         cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
@@ -25,6 +26,7 @@ describe('Certificação CTFL fase 1', () => {
             cy.contains('button', 'Tentar Novamente').click()
         })
     })
+
     // Cenário 2: acertar 3 de 10 questões deve gerar 30% de acertos.
     it('respostas 30% de acertos', () => {
         cy.fixture('quiz_ctfl_fase_1').then((quiz) => {
@@ -70,6 +72,7 @@ describe('Certificação CTFL fase 1', () => {
              
         })
     })
+    
     // Cenário 5: acertar 6 de 10 questões deve gerar 60% de acertos.
     it('respostas 60% de acertos', () => {
         cy.fixture('quiz_ctfl_fase_1').then((quiz) => {

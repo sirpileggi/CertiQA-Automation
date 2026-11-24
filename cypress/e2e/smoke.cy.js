@@ -1,3 +1,5 @@
+///<reference types="cypress"/>
+
 describe("smoke", () => {
   beforeEach(() => {
     cy.fixture("endereco_login").then((usuario) => {
@@ -65,6 +67,4 @@ describe("smoke", () => {
     cy.get('.space-y-2 > :nth-child(1) > .text-gray-300').click();
    cy.get('.lg\\:w-1\\/2 > .text-4xl').should('be.visible').and('contain', 'Prepare-se para as certificações ISTQB com o CertiQA da Qazando');// o nome do elemento de texto utilizado para verificação da página acabou por conter elementos de classe Tailwind que possuí caracteres reservados então foi necessário utilizar a contra barra dupla para permitir a identificação correta
   });
-
-
 });

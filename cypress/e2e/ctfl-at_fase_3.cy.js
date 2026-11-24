@@ -10,6 +10,7 @@ describe('Certificação CTFL-AT fase 3', () => {
       })  
     })
   })
+
   // Cenário 1: responder todas as questões incorretamente deve gerar 0/10.
   it('respostas 100% incorretas', () => {
     cy.fixture('quiz_ctfl-at_fase_3').then((quiz) => {
@@ -22,6 +23,7 @@ describe('Certificação CTFL-AT fase 3', () => {
         .should('eq', '0% de acertos')
     })
   })
+
   // Cenário 2: responder todas as questões deve gerar 60% de acertos.
   it('respostas 60% corretas', () => {
     cy.fixture('quiz_ctfl-at_fase_3').then((quiz) => {
@@ -34,6 +36,7 @@ describe('Certificação CTFL-AT fase 3', () => {
         .should('eq', '60% de acertos')
     }) 
   })
+  
   // Cenário 3: responder todas as questões corretamente deve gerar 100% de acertos.
   it('respostas 100% corretas', () => {
     cy.fixture('quiz_ctfl-at_fase_3').then((quiz) => {

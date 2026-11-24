@@ -1,3 +1,5 @@
+///<reference types="cypress"/>
+
 describe('Cadastro de usuário', () => {
 	const nomePlaceholder = 'Digite seu nome completo'
 	const emailPlaceholder = 'Digite seu e-mail'
@@ -7,6 +9,7 @@ describe('Cadastro de usuário', () => {
 	beforeEach(() => {
 		cy.visit('/cadastro')
 	})
+
 /// cenario 1 apresentar nomes dos campos obrigatorios
 	it('Exibe os campos do formulário de cadastro', () => {
 		cy.contains('h1', 'Crie sua conta').should('be.visible')
@@ -16,6 +19,7 @@ describe('Cadastro de usuário', () => {
 		cy.get(`[placeholder="${confirmarSenhaPlaceholder}"]`).should('be.visible')
 		cy.contains('Código do aluno (opcional)').should('be.visible')
 	})
+
 ///cenario 2 cadastro com sucesso  
     it('Cadastrar um usuário com sucesso', () => {
 		cy.fixture('endereco_login').then((usuario) => {
@@ -27,6 +31,7 @@ describe('Cadastro de usuário', () => {
 			cy.contains('button', 'Cadastrar').click()
 		})
 })
+
 /// cenario 3 apresenta mensagens de erro ao tentar cadastrar sem preencher os campos obrigatorios
 	it('Exibe mensagens ao tentar cadastrar sem preencher os campos obrigatórios', () => {
 		cy.contains('button', 'Cadastrar').click()
@@ -34,6 +39,7 @@ describe('Cadastro de usuário', () => {
 		cy.contains('E-mail é obrigatório').should('be.visible')
 		cy.contains('Senha é obrigatória').should('be.visible')
 	})
+
 ///cenario 4 impede o envio de um e-mail em formato inválido (sem .com)
 	it('Impede o envio de um e-mail em formato inválido (sem .com)', () => {
 		cy.get(`[placeholder="${nomePlaceholder}"]`).type('Usuário de Teste')
@@ -43,6 +49,7 @@ describe('Cadastro de usuário', () => {
 		cy.contains('button', 'Cadastrar').click()
         cy.contains ('E-mail inválido').should('be.visible')
 	})
+
 ///cenario 5 impede o envio de um e-mail em formato inválido (sem @)
 	it('Impede o envio de um e-mail em formato inválido (sem @)', () => {
 		cy.get(`[placeholder="${nomePlaceholder}"]`).type('Usuário de Teste')
@@ -61,6 +68,7 @@ describe('Cadastro de usuário', () => {
         expect(mensagem).to.not.be.empty
       })
 	})
+	
 ///cenario 6 senhas diferentes
 	it('Exibe erro quando a confirmação da senha é diferente', () => {
 		cy.get(`[placeholder="${nomePlaceholder}"]`).type('Usuário de Teste')
